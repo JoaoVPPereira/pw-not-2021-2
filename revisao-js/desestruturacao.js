@@ -45,3 +45,5 @@ console.log(cor)
 console.log(ano)
 
 // Para fazer a desestruturação parcial de objeto, basta criar variáveis correspondentes apenas às propriedades de interesse.
+// let {marca, modelo} = carros
+//console.log(`Marca: ${marca}, Modelo: ${modelo}`)

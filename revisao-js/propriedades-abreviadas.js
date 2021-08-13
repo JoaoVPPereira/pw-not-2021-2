@@ -13,10 +13,11 @@ let nomeCompleto = 'Jucicleison da Silva Souza'
 let grupo = 'alunos'
 let password = '12345678'
 
-// Abreviando propriedades
+// Criação de objeto cujo valor das propriedades vêm de
+// variáveis previamente existentes
 let infoUsuario = {
     usuario, //usuario: usuario,
-    nomeCompleto: nomeCompleto,
+    nome: nomeCompleto,
     grupo, //grupo: grupo,
     senha: password
 }
@@ -24,7 +25,7 @@ let infoUsuario = {
 
 console.log(infoUsuario)
 
-// Exibindo o conteúdo da variável 'password' para fins de depuração
+// Propriedades abreviadas são íteos em depuração para exibir o nome da variável junto com seu valor
 console.log({password})
 console.log({grupo})
 console.log({password, grupo})
