@@ -8,7 +8,7 @@
     </head>
     <body>
 
-        <div id="root">
+        <div id="root" style="border: 1px solid red;">
 
         </div>
         <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
@@ -27,8 +27,22 @@
             // Criando o elemento usando React
             const primeiraDiv = React.createElement('div', props)
 
+            // Criando um parágrafo com props diretamente no createElement
+            const parag = React.createElement('p', {
+                children: 'Parágrafo criado com React',
+                style: {color: 'blue'}
+            })
+
+            // Criando uma div de forma rápida usando React.createElement com três parâmetros
+            // 1º parâmetro: tipo de elemento
+            // 2º parâmetro: props (se não existirem, pode ser null)
+            // 3º parâmetro: children
+            const segundaDiv = React.createElement('div', null, 'Div criada rapidamente no React')
+
             // Colocando a primeira div dentro da div "root"
             ReactDOM.render(primeiraDiv, root)
+
+            ReactDOM.render(parag, root)
 
         </script>
     </body>
